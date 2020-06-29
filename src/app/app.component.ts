@@ -7,7 +7,9 @@ import {
   Attribution,
   FullScreen,
   ScaleLine,
-  ZoomToExtent
+  ZoomToExtent,
+  Rotate,
+  Zoom
 } from "ol/control.js";
 import {
   defaults as defaultInteractions,
@@ -27,9 +29,7 @@ export class AppComponent {
   ngAfterViewInit() {
     console.log(`OnInit`);
 
-    var osmFrAttribution = `&copy; Openstreetmap France |
-    Données <a href="http://www.openstreetmap.org/copyright"
-     rel="noreferrer">© les contributeurs OpenStreetMap</a>`;
+    var osmFrAttribution = `&copy; Openstreetmap France`;
     var map = new Map({
       layers: [
         new TileLayer({
@@ -46,10 +46,10 @@ export class AppComponent {
         }),
         new ZoomToExtent({
           extent: [
-            813079.7791264898,
-            5929220.284081122,
-            848966.9639063801,
-            5936863.986909639
+            1.4167426884384156,
+            43.62014063609365,
+            1.4310013115615847,
+            43.623247323772574
           ]
         }),
         new FullScreen(),
@@ -58,8 +58,8 @@ export class AppComponent {
       interactions: defaultInteractions().extend([new DragRotateAndZoom()]),
       target: "map",
       view: new View({
-        center: fromLonLat([2, 45]),
-        zoom: 6
+        center: fromLonLat([1.423872, 43.621694]),
+        zoom: 11
       })
     });
 
