@@ -8,8 +8,7 @@ import {
   FullScreen,
   ScaleLine,
   ZoomToExtent,
-  Rotate,
-  Zoom
+
 } from "ol/control.js";
 import {
   defaults as defaultInteractions,
