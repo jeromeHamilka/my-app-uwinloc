@@ -58,9 +58,9 @@ export class AppComponent {
       target: "map",
       view: new View({
         center: fromLonLat([1.423872, 43.621694]),
-        zoom: 11
+        zoom: 11,
+        /* projection: 'EPSG:4326' */
       })
     });
-
   }
 }
