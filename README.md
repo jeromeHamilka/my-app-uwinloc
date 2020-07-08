@@ -1,3 +1,13 @@
+# Quick Start
+git clone https://github.com/jeromeHamilka/my-app-uwinloc.git
+cd my-app-uwinloc
+
+# Install Angular CLI if necessary
+npm install -g @angular/cli@latest
+
+# Install dependencies
+npm install
+
 # MyAppUwinloc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
